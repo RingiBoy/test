@@ -1,22 +1,4 @@
-Skip to content
-Search or jump to…
-
-Pull requests
-Issues
-Marketplace
-Explore
-
-@RingiBoy
-GrayHead
-/
-js_demos
-3
-010
- Code Issues 0 Pull requests 1 Actions Projects 0 Wiki Security Insights
-js_demos/this_one_folder_that_you_need/lesson2/tasks/task_2.txt
-@GrayHead GrayHead - task_2.txt 42 line change
-066e7cc yesterday
-90 lines (78 sloc)  9.25 KB
+7
 
 --створити масив та вивести його в консоль:
 - з 5 числових значень
@@ -105,18 +87,3 @@ js_demos/this_one_folder_that_you_need/lesson2/tasks/task_2.txt
 3 створити масив з рандомними значеннями, помножити всі його елементи на 5 та перемістити їх в інший масив.
 4 створити масив з будь якими значеннями (стрінги, числа, і тд...). пройтись по ньому, і якщо об'єкт є числом,
  додати його в інший масив.
-
-
-
-© 2020 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Help
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About
