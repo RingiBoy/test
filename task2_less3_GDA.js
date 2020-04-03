@@ -130,29 +130,40 @@
 
 
 
-let users =[{name:'Semion',age:11,skills:['IT','run']},{name:'Ivan',age:17,skills:['sweem','footbol']}]
-// console.log(users[0])
+// let users =[{name:'Semion',age:11,skills:['IT','run']},{name:'Ivan',age:17,skills:['sweem','footbol']}]
+// // console.log(users[0])
+// let resul=[];
+// for (const user of users)
+// {
+//     // console.log(user);
+//     for (const skillList of user.skills) {
+//         console.log(skillList);
+//         resul.push(skillList);
+//     }
+//        console.log(resul);
+
+// }
+
+// - За допомогою 2х  циклів проітеррувати  даний масив і масив кожного об'єкта.
+let users = [{name: 'vasya', age: 31, status: false, skills: ['java', 'js']}, {name: 'petya', age: 30, status: true, skills: ['java', 'js', 'html']}, {name: 'kolya', age: 29, status: true, skills: ['mysql', ',mongo']}, {name: 'olya', age: 28, status: false, skills: ['java', 'js']}, {name: 'max', age: 30, status: true, skills: ['mysql', ',mongo']}];
+
+console.log(users);
+console.log('__________');
+for (const user of users) {
+    // console.log(user)
+    // console.log('__________');
 
 
+    for (const znach in user) {
 
-for (const iterator of users)
-{
+        // console.log( typeof user[znach]);
 
-
-
-
-    let arr=iterator.skills;
-    let skillsArr=[];
-    for (const iterator2 of arr) {
-
-
-        skillsArr.push(iterator2);
-
-
-
+        if ((typeof user[znach] ==='object') && Array.isArray(user[znach])){
+            for (const arr of user[znach]) {
+                console.log(arr)
+            }
+        }
     }
-    console.log(skillsArr);
+
 }
-
-
 
