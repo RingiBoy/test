@@ -1,89 +1,169 @@
-7
-
---створити масив та вивести його в консоль:
-- з 5 числових значень
-- з 5 стічкових значень
-- з 5 значень стрічкового, числового та булевого типу
--- Створити пустий масив. Наповнити його будь-якими значеннями звертаючись до конкретного індексу. Вивести в консоль
-
-- За допомогою циклу for і document.write() вивести 10 блоків div c довільним текстом всередині
-- За допомогою циклу for і document.write() вивести 10 блоків div c довільним текстом і індексом всередині
-- За допомогою циклу while вивести в документ 20 блоків h1 c довільним текстом всередині.
-- За допомогою циклу while вивести в документ 20 блоків h1 c довільним текстом і індексом всередині.
-- Створити масив з 10 числових елементів. Вивести в консоль всі його елементи в циклі.
-- Створити масив з 10 строкрових елементів. Вивести в консоль всі його елементи в циклі.
-- Створити масив з 10 елементів будь-якого типу. Вивести в консоль всі його елементи в циклі.
-- Створити масив з 10 елементів числового, стірчкового і булевого типу. За допомогою if та typeof вивести тільки булеві елементи
-- Створити масив з 10 елементів числового, стірчкового і булевого типу. За допомогою if та typeof вивести тільки числові елементи
-- Створити масив з 10 елементів числового, стрічкового і булевого типу. За допомогою if та typeof вивести тільки рядкові елементи
-- Створити порожній масив. Наповнити його 10 елементами (різними за типами) через звернення до конкретних індексів. Вивести в консоль всі його елементи в циклі.
-- Створити цикл for на 10  ітерацій з кроком 1. Вивести поточний номер кроку через console.log та document.write
-- Створити цикл for на 100 ітерацій з кроком 1. Вивести поточний номер кроку через console.log та document.write
-- Створити цикл for на 100 ітерацій з кроком 2. Вивести поточний номер кроку через console.log та document.write
-- Створити цикл for на 100 ітерацій. Вивести тільки парні кроки. через console.log + document.write
-- Створити цикл for на 100 ітерацій. Вивести тільки непарні кроки. через console.log + document.write
-- Відтворити роботу годинника, відрахувавши 2 хвилини (2 цикли! 1й - хвилини, 2й - секунди)
-- Відтворити роботу годинника, відрахувавши  2 години 20 хвилини (3 цикли! 1й - години, 2й - хвилини, 3й - секунди)
-Додатково
-- Дано масив: [ 'a', 'b', 'c'] . За допомогою циклу for зібрати всі букви в слово.
-- Дано масив: [ 'a', 'b', 'c'] . За допомогою циклу while зібрати всі букви в слово.
-- Дано масив: [ 'a', 'b', 'c'] . За допомогою циклу for of зібрати всі букви в слово.
-- Дано масив: [ 'a', 'b', 'c'] . За допомогою циклу for in зібрати всі букви в слово.
-
-=================
-=================
-=================
-=================
-
-- Дан масив ['a', 'b', 'c']. Додайте йому в кінець елементи 1, 2, 3 за допомогою циклу.
-- Дан масив [1, 2, 3]. Зробіть з нього новий масив [3, 2, 1].
-- Дан масив [1, 2, 3]. Додайте йому в кінець елементи 4, 5, 6.
-- Дан масив [1, 2, 3]. Додайте йому в початок елементи 4, 5, 6.
-- Дан масив ['js', 'css', 'jq']. Виведіть на екран перший елемент за допомогою shift()
-- Дан масив ['js', 'css', 'jq']. Виведіть на екран останній елемент за допомогою pop()
-- Дан масив [1, 2, 3, 4, 5]. За допомогою методу/функції slice перетворіть масив в [4, 5].
-- Дан масив [1, 2, 3, 4, 5]. За допомогою методу/функції slice перетворіть масив в [1,2].
-- Дан масив [1, 2, 3, 4, 5]. За допомогою методу/функції splice перетворіть масив в [1, 4, 5].
-- Дан масив [1, 2, 3, 4, 5]. За допомогою методу/функції splice зробіть з нього масив [1, 2, 3, 'a', 'b', 'c', 4, 5].
-- Дан масив [1, 2, 3, 4, 5]. За допомогою методу/функції splice зробіть з нього масив [1, 'a', 'b', 2, 3, 4, 'c', 5, 'e'].
-- Взяти масив з 10 чисел або створити його. Вивести в консоль тільки ті елементи, значення яких є парними.
-- Взяти масив з 10 чисел або створити його. Створити 2й порожній масив. За допомогою будь-якого циклу та push () скопіювати значення одного масиву в інший
-- Взяти масив з 10 чисел або створити його. Створити 2й порожній масив. За допомогою будь-якого циклу скопіювати значення одного масиву в інший.
 
 
-============
 
-зробити масив з 10 чисел [2,17,13,6,22,31,45,66,100,-18]та:
-1. перебрати його циклом while
-2. перебрати його циклом for
-3. перебрати циклом while та вивести  числа тільки з непарним індексом
-4. перебрати циклом for та вивести  числа тільки з непарним індексом
-5. перебрати циклом while та вивести  числа тільки парні  значення
-6. перебрати циклом for та вивести  числа тільки парні  значення
-7. замінити кожне число кратне 3 на слово "okten"
-8. вивести масив в зворотньому порядку.
-9. всі попередні завдання (окрім 8), але в зворотньому циклі (с заду на перед)
-10
- створити пустий масив та :
-- заповнити його 50 парними числами за допомоги циклу.
-- заповнити його 50 непарними числами за допомоги циклу.
+//5 Создать массив из 10 объектов cars и заполнить его машинами с полями модель, год выпуска, мощность, цвет. (Значаения полей могу быть выдуманными)
+
+// let packCars = [{name:'ford', color:'red', yer:1900}, {name:'reno', color:'green', yer:1800},{name:'mazda', color:'red', yer:1900},{name:'kamaz', color:'yellow', yer:2000},{name:'zapor', color:'black', yer:2020},{name:'zapor', color:'black', yer:2500},{name:'lamborj', color:'black', yer:2020},{name:'zapor', color:'black', yer:2555},{name:'gtrtr', color:'white', yer:5000}];
+// console.log(packCars);
+// console.log(packCars[0].name);
+// console.log(packCars.length);
 
 
-1
- створити пустий масив та :
-1. заповнити його 50 парними числами за допомоги циклу.
-2. заповнити його 50 непарними числами за допомоги циклу.
-3. используя Math.random заполнить массив из ???(сколько хотите) элементов.
- диапазон рандома 8 до 732. (но сначала пробуйте БЕЗ ДИАПАЗОНА!)
- 2. вывести на консоль  каждый третий елемент
- 3. вывести на консоль  каждый третий елемент
- но при условии что его значение является парным.
- 4. вывести на консоль  каждый третий елемент
- но при условии что он имеет парное значение и
- записать их в другой массив.
- 5. Вывести каждый елемент массива у которого соседний с права элемент - парный
-  5 масив з числами [100,250,50,168,120,345,188], Які характеризують вартість окремої покупки. обрахувати середній чек.
 
-3 створити масив з рандомними значеннями, помножити всі його елементи на 5 та перемістити їх в інший масив.
-4 створити масив з будь якими значеннями (стрінги, числа, і тд...). пройтись по ньому, і якщо об'єкт є числом,
- додати його в інший масив.
+
+
+
+
+
+
+// //6 Создать массив объектов cities и заполнить его объектами с полями название, популяция, страна, регион. (Значаения полей могу быть выдуманными)
+// let cities = [{name:'kiev', population:4, region:'center',country:'Ukraine'},{name:'kharkov', population:2, region:'Vostok',country:'Ukraine'},{name:'lvov', population:3, region:'zapad',country:'Ukraine'}]
+// console.log(cities);
+
+
+
+//7 coздать массив объектов cars и заполнить его машинами с полями модель, год выпуска, мощность, цвет, водитель. Водитель является отдельным объектом с полями имя, возраст, пол, стаж.
+
+// let cars = [
+//     {name:'ford', color:'red', yer:1900, driver:{sex:'men', age:44, staj:'4 years',fullName:'G.D.A'}},
+//     {name:'reno', color:'green', yer:1800},
+//     {name:'mazda', color:'red', yer:1900, driver:{sex:'men', age:18, staj:'1 years',fullName:'Ivanov Ivan Sidorovich'}},
+//     {name:'kamaz', color:'yellow', yer:2000, driver:{sex:'women', age:58, staj:'10 years',fullName:'Prosto Marusya'}},
+//     {name:'zapor', color:'black', yer:2020, river:{sex:'men', age:32, staj:'10 years',fullName:'Sergey Juravlev =)'}}
+// ];
+
+// console.log(cars);
+
+//8 проитерировать каждый массив из задания 5,6,7 при помощи while.
+
+// let packCars = [{name:'ford', color:'red', yer:1900}, {name:'reno', color:'green', yer:1800},{name:'mazda', color:'red', yer:1900},{name:'kamaz', color:'yellow', yer:2000},{name:'zapor', color:'black', yer:2020},{name:'zapor', color:'black', yer:2500},{name:'lamborj', color:'black', yer:2020},{name:'zapor', color:'black', yer:2555},{name:'gtrtr', color:'white', yer:5000}];
+// let i=0;
+
+// while ( i < packCars.length)
+// {
+//     console.log(packCars[i])
+//     i++
+// }
+
+
+
+// let cities = [{name:'kiev', population:4, region:'center', country:'Ukraine'},{name:'kharkov', population:2, region:'Vostok',country:'Ukraine'},{name:'lvov', population:3, region:'zapad',country:'Ukraine'}]
+// //  console.log(cities);
+
+// let i=0;
+//  while ( i < cities.length){
+
+//     console.log(cities[i]);
+//     i++
+
+//  }
+
+//  let cars = [
+//      {name:'ford', color:'red', yer:NaN, driver:{sex:'men', age:44, staj:'4 years',fullName:'G.D.A'}},{name:'reno', color:'green', yer:1800},{name:'mazda', color:'red', yer:1900, driver:{sex:'men', age:18, staj:'1 years',fullName:'Ivanov Ivan Sidorovich'}},{name:'kamaz', color:'yellow', yer:2000, driver:{sex:'women', age:58, staj:'10 years',fullName:'Prosto Marusya'}},{name:'zapor', color:'black', yer:2020, river:{sex:'men', age:32, staj:'10 years',fullName:'Sergey Juravlev =)'}}
+//  ];
+
+// i=0;
+// while (i<cars.length){
+//     console.log(cars[i])
+//     i++
+// }
+// console.log(cars.length)
+
+// for (let index = 0; index < cars.length; index++) {
+//    console.log(cars[index]);
+
+// }
+
+
+// проитерировать каждый массив из задания 5,6,7 при помощи  for of.
+// for (const iterator of cars) {
+//     console.log(iterator)
+// }
+
+
+// взять объекты из задания 1 и превратить каждый в json
+
+//  let ArrJson = JSON.stringify(cars);
+//  console.log(ArrJson);
+
+
+//  let JsonToArr = JSON.parse(ArrJson);
+//  console.log(JsonToArr);
+
+//  взять массив из задания 5,в цикле перебрать его объекты превратив их в json
+//   взять массив из задания 6,в цикле перебрать его объекты превратив их в json
+//  взять массив из задания 7,в цикле перебрать его объекты превратив их в json и сразу скоприовать в новый массив.
+
+// let cities = [{name:'kiev', population:4, region:'center', country:'Ukraine'},{name:'kharkov', population:2, region:'Vostok',country:'Ukraine'},{name:'lvov', population:3, region:'zapad',country:'Ukraine'}]
+
+// for (let index = 0; index < cities.length; index++) {
+//     const element = console.log(JSON.stringify(cities[index]));
+
+// }
+
+
+ //let packCars = ['5555',{name:'ford', color:'red', yer:1900}, {name:'reno', color:'green', yer:1800},{name:'mazda', color:'red', yer:1900},{name:'kamaz', color:'yellow', yer:2000},{name:'zapor', color:'black', yer:2020},{name:'zapor', color:'black', yer:2500},{name:'lamborj', color:'black', yer:2020},{name:'zapor', color:'black', yer:2555},{name:'gtrtr', color:'white', yer:5000}];
+
+// for (let i = 0; i < packCars.length; i++) {
+//     const element = console.log(JSON.stringify (packCars[i]));
+
+// }
+
+
+
+// let cars = [
+//           {name:'ford', color:'red', yer:NaN, driver:{sex:'men', age:44, staj:'4 years',fullName:'G.D.A'}},{name:'reno', color:'green', yer:1800},{name:'mazda', color:'red', yer:1900, driver:{sex:'men', age:18, staj:'1 years',fullName:'Ivanov Ivan Sidorovich'}},{name:'kamaz', color:'yellow', yer:2000, driver:{sex:'women', age:58, staj:'10 years',fullName:'Prosto Marusya'}},{name:'zapor', color:'black', yer:2020, river:{sex:'men', age:32, staj:'10 years',fullName:'Sergey Juravlev =)'}}
+//       ];
+
+
+//     //   for (let i = 0; i < cars.length; i++) {
+//     //       const element = console.log(JSON.stringify(cars[i]));
+
+//     //   }
+//     for (const iter of cars) {
+//         const element = console.log(JSON.stringify(iter));
+//     }
+
+
+//16 - Создать массив пользователей. У каждого пользователя обязательно должено быть поле skills которое является массивом. Проитерировать массив пользователей и в каждом пользователе проитерировать его массив skills
+//17 - Создать массив пользователей. У каждого пользователя обязательно должено быть поле skills которое является массивом. Проитерировать массив пользователей и в каждом пользователе проитерировать его массив skills. Скопировать все skills всех пользователей в отедльный массив
+
+
+
+// let users =[{name:'Semion',age:11,skills:['IT','run']},{name:'Ivan',age:17,skills:['sweem','footbol']}]
+// // console.log(users[0])
+// let resul=[];
+// for (const user of users)
+// {
+//     // console.log(user);
+//     for (const skillList of user.skills) {
+//         console.log(skillList);
+//         resul.push(skillList);
+//     }
+//        console.log(resul);
+
+// }
+
+// - За допомогою 2х  циклів проітеррувати  даний масив і масив кожного об'єкта.
+ let users = [{name: 'vasya', age: 31, status: false, skills: ['java', 'js']}, {name: 'petya', age: 30, status: true, skills: ['java', 'js', 'html']}, {name: 'kolya', age: 29, status: true, skills: ['mysql', ',mongo']}, {name: 'olya', age: 28, status: false, skills: ['java', 'js']}, {name: 'max', age: 30, status: true, skills: ['mysql', ',mongo']}];
+
+ console.log(users);
+ console.log('__________');
+for (const user of users) {
+    // console.log(user)
+    // console.log('__________');
+
+
+        for (const znach in user) {
+
+            // console.log( typeof user[znach]);
+
+            if ((typeof user[znach] ==='object') && Array.isArray(user[znach])){
+                for (const arr of user[znach]) {
+                     console.log(arr)
+                }
+            }
+    }
+
+}
+
