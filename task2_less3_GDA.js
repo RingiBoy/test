@@ -168,62 +168,62 @@
 // }
 
 // З масиву users за допомогою циклу витягнути адреси користувачів і записати (скопіювати) їх в інший порожній масив.
-let users = [{
-    name: 'vasya',
-    age: 31,
-    status: false,
-    address: {city: 'Lviv', country: 'Ukraine', street: 'Shevchenko', houseNumber: 1}
-}, {
-    name: 'petya',
-    age: 30,
-    status: true,
-    address: {city: 'New York', country: 'USA', street: 'East str', houseNumber: 21}
-}, {
-    name: 'kolya',
-    age: 29,
-    status: true,
-    address: {city: 'Budapest', country: 'Hungary', street: 'Kuraku', houseNumber: 78}
-}, {
-    name: 'olya',
-    age: 28,
-    status: false,
-    address: {city: 'Prague', country: 'Czech', street: 'Paster', houseNumber: 56}
-}, {
-    name: 'max',
-    age: 30,
-    status: true,
-    address: {city: 'Istanbul', country: 'Turkey', street: 'Mikar', houseNumber: 39}
-}, {
-    name: 'anya',
-    age: 31,
-    status: false,
-    address: {city: 'Rio', country: 'Brasil', street: 'Ronaldi', houseNumber: 5}
-}, {
-    name: 'oleg',
-    age: 28,
-    status: false,
-    address: {city: 'Montreal', country: 'Canada', street: 'Acusto', houseNumber: 90}
-}, {
-    name: 'andrey',
-    age: 29,
-    status: true,
-    address: {city: 'Quebeck', country: 'Canada', street: 'Binaro', houseNumber: 33}
-}, {
-    name: 'masha',
-    age: 30,
-    status: true,
-    address: {city: 'Moscow', country: 'Russia', street: 'Gogolia', houseNumber: 1}
-}, {
-    name: 'olya',
-    age: 31,
-    status: false,
-    address: {city: 'Portland', country: 'USA', street: 'Forest str', houseNumber: 4}
-}, {
-    name: 'max',
-    age: 31,
-    status: true,
-    address: {city: 'Cairo', country: 'Egypt', street: 'Seashore', houseNumber: 45}
-}];
+// let users = [{
+//     name: 'vasya',
+//     age: 31,
+//     status: false,
+//     address: {city: 'Lviv', country: 'Ukraine', street: 'Shevchenko', houseNumber: 1}
+// }, {
+//     name: 'petya',
+//     age: 30,
+//     status: true,
+//     address: {city: 'New York', country: 'USA', street: 'East str', houseNumber: 21}
+// }, {
+//     name: 'kolya',
+//     age: 29,
+//     status: true,
+//     address: {city: 'Budapest', country: 'Hungary', street: 'Kuraku', houseNumber: 78}
+// }, {
+//     name: 'olya',
+//     age: 28,
+//     status: false,
+//     address: {city: 'Prague', country: 'Czech', street: 'Paster', houseNumber: 56}
+// }, {
+//     name: 'max',
+//     age: 30,
+//     status: true,
+//     address: {city: 'Istanbul', country: 'Turkey', street: 'Mikar', houseNumber: 39}
+// }, {
+//     name: 'anya',
+//     age: 31,
+//     status: false,
+//     address: {city: 'Rio', country: 'Brasil', street: 'Ronaldi', houseNumber: 5}
+// }, {
+//     name: 'oleg',
+//     age: 28,
+//     status: false,
+//     address: {city: 'Montreal', country: 'Canada', street: 'Acusto', houseNumber: 90}
+// }, {
+//     name: 'andrey',
+//     age: 29,
+//     status: true,
+//     address: {city: 'Quebeck', country: 'Canada', street: 'Binaro', houseNumber: 33}
+// }, {
+//     name: 'masha',
+//     age: 30,
+//     status: true,
+//     address: {city: 'Moscow', country: 'Russia', street: 'Gogolia', houseNumber: 1}
+// }, {
+//     name: 'olya',
+//     age: 31,
+//     status: false,
+//     address: {city: 'Portland', country: 'USA', street: 'Forest str', houseNumber: 4}
+// }, {
+//     name: 'max',
+//     age: 31,
+//     status: true,
+//     address: {city: 'Cairo', country: 'Egypt', street: 'Seashore', houseNumber: 45}
+// }];
 // let obj=[];
 // //  console.log(users);
 //  for (let i = 0; i < users.length; i++) {
@@ -237,18 +237,128 @@ let users = [{
 //      console.log(obj)
 
 
-// - За допомоги циклу проітерувати  масив users, записати кожного юзера в сівй блок за допомоги document.createElement. Всі данні в одному блоці.
 
-for (let i = 0; i < users.length; i++) {
-    const user = users[i];
-    console.log(user);
-    let usersDiv = document.createElement('div');
+//
+// - За допомоги циклу проітерувати  масив users, записати кожного юзера в сівй блок за допомоги document.createElement, розділивши всі властивості по своїм блокам (div>div*4)
 
 
-    usersDiv.innerText=`${user.name} ${user.age} ${user.status} ${JSON.stringify(user.address)}`;
-    document.body.appendChild(usersDiv);
+// for (let i = 0; i < users.length; i++) {
+//     const user = users[i];
+//     console.log(user);
+//     let usersDivMain = document.createElement('div');
 
-}
+//   document.body.appendChild(usersDivMain);
+//   let UserName=document.createElement('div');
+//   UserName.innerText=`${user.name}`;
+//   usersDivMain.appendChild(UserName);
+//   //age
+
+//   let UserAge=document.createElement('div');
+//   UserAge.innerText=`${user.age}`;
+//   usersDivMain.appendChild(UserAge);
+//   //status
+//   let Userstat=document.createElement('div');
+//   Userstat.innerText=`${user.status}`;
+//   usersDivMain.appendChild(Userstat);
+//   //address:
+//   let Useradd=document.createElement('div');
+//   Useradd.innerText=`${JSON.stringify(user.address)}`;
+
+//   usersDivMain.appendChild(Useradd);
+
+// }
+
+// За допомоги циклу проітерувати  масив users, записати кожного юзера в сівй блок за допомоги document.createElement, розділивши всі властивості по своїм блокам , блок з адресою зробити окремим блоком, з блоками для кожної властивості
+
+// !!!!не понял задания
+
+
+// - Дано 2 масиви з рівною кількістю об'єктів.
+// Масиви:
+// let usersWithId = [{id: 1, name: 'vasya', age: 31, status: false}, {id: 2, name: 'petya', age: 30, status: true}, {id: 3, name: 'kolya', age: 29, status: true}, {id: 4, name: 'olya', age: 28, status: false},];
+// let citiesWithId = [{user_id: 3, country: 'USA', city: 'Portland'}, {user_id: 1, country: 'Ukraine', city: 'Ternopil'}, {user_id: 2, country: 'Poland', city: 'Krakow'}, {user_id: 4, country: 'USA', city: 'Miami'},];
+// З'єднати в один об'єкт користувача та місто з відповідними "id" та "user_id" .
+// Записати цей об'єкт в новий масив
+// Частковий приклад реультату:
+// let usersWithCities = [{id: 1, name: 'vasya', age: 31, status: false, address: {user_id: 1, country: 'Ukraine', city: 'Ternopil'}}....]
+
+
+// let usersWithId = [{id: 1, name: 'vasya', age: 31, status: false}, {id: 2, name: 'petya', age: 30, status: true}, {id: 3, name: 'kolya', age: 29, status: true}, {id: 4, name: 'olya', age: 28, status: false},];
+// let citiesWithId = [{user_id: 3, country: 'USA', city: 'Portland'}, {user_id: 1, country: 'Ukraine', city: 'Ternopil'}, {user_id: 2, country: 'Poland', city: 'Krakow'}, {user_id: 4, country: 'USA', city: 'Miami'},];
+
+
+// for (const userID of usersWithId) {
+//     for (const cityID of citiesWithId)
+//     {
+
+//         if( userID.id===cityID.user_id){
+
+//             userID.address=cityID;
+//              console.log(usersWithId);
+
+//         }
+//     }
+// }
+
+
+
+
+
+// - створити розмітці блок з id, class та текстом в середені. Зчитати окремо цей текст з селекторів по id , class та тегу
+
+
+let classXXX= document.getElementsByClassName('xxx');
+console.log(classXXX);
+let idTest=document.getElementById('test');
+console.log(idTest);
+let divAll=document.getElementsByTagName('div')
+console.log(divAll[1].innerText);
+
+//  змінити цей текст використовуючи селектори id, class,  tag
+
+
+idTest.innerText='Был текст1 , а стал другим!! Главное, что все работает';
+
+classXXX[0].innerText='good by!!!';
+// змінити висоту та ширину блоку використовуючи селектори id, class,  tag
+
+idTest.style.width='300px';
+idTest.style.height='300px';
+divAll[1].style.background='green';
+
+// let tab=document.createElement('table');
+// let strokaTAB=document.createElement('tr');
+// let dataTAB=document.createElement('td');
+// let dataTAB2=document.createElement('td');
+// let dataTAB3=document.createElement('td');
+// strokaTAB.appendChild(dataTAB);
+// strokaTAB.appendChild(dataTAB2);
+// strokaTAB.appendChild(dataTAB3);
+// tab.appendChild(strokaTAB);
+// document.body.appendChild(tab);
+// dataTAB.innerText='yacheyka1';
+// dataTAB2.innerText='yacheyka2';
+// dataTAB3.innerText='yacheyka3';
+// dataTAB3.style.background='red';
+// tab.style.background='yellow';
+// let tab=document.createElement('table');
+// for (let i = 0; i < 10; i++) {
+
+// let strokaTAB=document.createElement('tr');
+// let dataTAB=document.createElement('td');
+// let dataTAB2=document.createElement('td');
+// let dataTAB3=document.createElement('td');
+// strokaTAB.appendChild(dataTAB);
+// strokaTAB.appendChild(dataTAB2);
+// strokaTAB.appendChild(dataTAB3);
+// tab.appendChild(strokaTAB);
+
+// dataTAB.innerText=`stroka ${i} yach1`;
+// dataTAB2.innerText=`stroka ${i} yacheyka2`;
+// dataTAB3.innerText=`stroka ${i}  yacheyka3`;
+// }
+// document.body.appendChild(tab);
+
 
 
 
