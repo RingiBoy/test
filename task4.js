@@ -256,27 +256,27 @@
 
 
 
-cons cars = ['kamaz', 'slavuta', 'mers', 'reno'];
-
-
-function carToDiv(cars,id)
-{
-    for (let i = 0; i < cars.length; i++)
-    {
-        console.log(cars[i]);
-        if (cars[i].name){
-            let divka=document.createElement('div')
-            divka.innerHTML=` Наименование:  ${cars[i].name}`;
-            document.body.appendChild(divka);
-            let ul=document.createElement('ul')
-            divka.appendChild(ul);
-
-            li.innerHTML=` Цвет:  ${cars[i].color}`;
-        }
-    }
-
-}
-
-
-
-carToDiv(cars)
+// const cars = ['kamaz', 'slavuta', 'mers', 'reno'];
+//
+//
+// function carToDiv(cars,id)
+// {
+//     for (let i = 0; i < cars.length; i++)
+//     {
+//         console.log(cars[i]);
+//         if (cars[i].name){
+//             let divka=document.createElement('div');
+//             divka.innerHTML=` Наименование:  ${cars[i].name}`;
+//             document.body.appendChild(divka);
+//             let ul=document.createElement('ul');
+//             divka.appendChild(ul);
+//
+//             li.innerHTML=` Цвет:  ${cars[i].color}`;
+//         }
+//     }
+//
+// }
+//
+//
+//
+// carToDiv(cars);
