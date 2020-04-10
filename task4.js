@@ -2,10 +2,10 @@
 
 
 
-function ConsoleLog (date)
-{
-    console.log(date)
-}
+// function ConsoleLog (date)
+// {
+// console.log(date)
+// }
 
 // let string = prompt('write smth')
 // let array = string.split(' ');
@@ -172,28 +172,111 @@ function ConsoleLog (date)
 // Створити функцію яка приймає масив будь яких объектів, та повертає загальн кількість полів в них
 
 
-arr=[{name:'dima', age:35, sex:'men'},{name:'aliena', age:30, sex:'women'}, true, 0, {name:'Ivan', age:18, sex:'men'}];
+// arr=[{name:'dima', age:35, sex:'men'},{name:'aliena', age:30, sex:'women'}, true, 0, {name:'Ivan', age:18, sex:'men'}];
 
-function colichestvo (array){
-    let k=0;
-    for (let i = 0; i < array.length; i++) {
-        if(typeof array[i]==='object'){
-            for (const key in array[i]) {
-                k=k+1;
+// function colichestvo (array){
+//         let k=0;
+//         for (let i = 0; i < array.length; i++) {
+//             if(typeof array[i]==='object'){
+//               for (const key in array[i]) {
+//                 k=k+1;
 
-            }
+//               }
 
+//             }
+
+//         }
+//         return(k);
+//     }
+
+//     const count=colichestvo(arr);
+//     console.log(count);
+
+
+
+// створити функцію  яка скаладає значення елементів з однаковими індексами  та повертає новий результуючий масив.
+// Приклад
+// [1,2,3,4]
+// [2,3,4,5]
+// результат
+// [3,5,7,9]
+
+
+// function xxxx(arr1, arr2){
+//   let arrSumm=[];
+//   for (let i = 0; i < arr1.length; i++) {
+//               arrSumm.push(arr1[i]+arr2[i]);
+
+//   }
+//   return(arrSumm);
+//   }
+//      const funcSumArr = xxxx([6,2,3,4], [2,3,7,5]);
+//   console.log(funcSumArr);
+
+
+
+// Створити функцію яка :
+// - Додає в боді блок з текстом "Hello owu"
+// function bodydiv(){
+//   let toBodyText = document.createElement('div');
+//   toBodyText.innerHTML='<h1>Hello World</h1>'
+//   document.body.appendChild(toBodyText);
+//   toBodyText.style.background='red';
+// }
+// bodydiv()
+
+
+// - Додає в боді елемент з текстом . Тип елементу та текст отримати через аргументи
+
+// function bodydiv(text, type){
+//     let toBodyText = document.createElement(type);
+//     toBodyText.innerHTML=text;
+//     document.body.appendChild(toBodyText);
+//     toBodyText.style.background='red';
+//   }
+
+
+//   let text='<h1>Hello world!</h1>';
+//   let type='div'
+//   bodydiv(text,type)
+
+
+
+// Створити функцію яка :
+// - Додає в боді блок з текстом "Hello owu"
+// - Додає в боді елемент з текстом . Тип елементу та текст отримати через аргументи
+// - приймає масив автомобілів (можна взяти з попередніх дз ),та  індентифікатор елемнту в який потрібно додати список цих автомобілів.
+// Для кожного автомобіля створити свій блок, та додати його в елемент, індентифікатор якого ви отримали. Всі властивості авто в обному блоці
+// - приймає масив автомобілів (можна взяти з попередніх дз ),та  індентифікатор елемнту в який потрібно додати список цих автомобілів.
+// Для кожного автомобіля створити свій блок, та додати його в елемент, індентифікатор якого ви отримали.
+// Для кожної властивості створити всередені блока автомоблія свій блок
+
+// (на основі минулого ДЗ)
+
+
+
+
+cons cars = ['kamaz', 'slavuta', 'mers', 'reno'];
+
+
+function carToDiv(cars,id)
+{
+    for (let i = 0; i < cars.length; i++)
+    {
+        console.log(cars[i]);
+        if (cars[i].name){
+            let divka=document.createElement('div')
+            divka.innerHTML=` Наименование:  ${cars[i].name}`;
+            document.body.appendChild(divka);
+            let ul=document.createElement('ul')
+            divka.appendChild(ul);
+
+            li.innerHTML=` Цвет:  ${cars[i].color}`;
         }
-
     }
-    return(k);
+
 }
 
-const count=colichestvo(arr);
-console.log(count);
 
 
-
-
-
-
+carToDiv(cars)
