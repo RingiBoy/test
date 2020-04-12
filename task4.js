@@ -243,39 +243,96 @@
 
 
 
-// Для кожного автомобіля створити свій блок, та додати його в елемент, індентифікатор якого ви отримали. Всі властивості авто в обному блоці
-// - приймає масив автомобілів (можна взяти з попередніх дз ),та  індентифікатор елемнту в який потрібно додати список цих автомобілів.
-// Для кожного автомобіля створити свій блок, та додати його в елемент, індентифікатор якого ви отримали.
-// Для кожної властивості створити всередені блока автомоблія свій блок
-
-// (на основі минулого ДЗ)
-// --------------------------------------------------
-
 // приймає масив автомобілів (можна взяти з попередніх дз ),та  індентифікатор елемнту в який потрібно додати список цих автомобілів.
 
 
 
+// function carToDiv(cars, idishka){
+
+// idDIV=document.getElementById(`${idishka}`);
+// // idDIV=document.getElementById('car');
+
+// console.log(idDIV);
+
+// divCar= document.createElement('div');
+// nameCar='';
+// // for (let i = 0; i < cars.length; i++)
+// //    {
+
+// //    nameCar=nameCar+cars[i]+', ';
+// //    }
+// divCar.innerHTML=cars;
+// idDIV.appendChild(divCar);
+
+// console.log(nameCar);
+
+// }
+
+// const cars = ['kamaz', 'slavuta', 'mers', 'reno'];
+// let idishka = 'car';
+// carToDiv(cars,idishka);
+
+
+// Для кожного автомобіля створити свій блок, та додати його в елемент, індентифікатор якого ви отримали.
+// Всі властивості авто в обному блоці:
+
+// function carToDiv(cars, idishka){
+//
+//    idDIV=document.getElementById(`${idishka}`);
+//    divCar= document.createElement('div');
+//    for (const key in cars) {
+//       carName=cars[key].name;
+//       carAge=cars[key].age;
+//       carColor=cars[key].color;
+//       console.log(car)
+//
+//       divCar= document.createElement('div');
+//       divCar.innerHTML=`Наименование:${carName}, Возраст:${carAge}, Цвет:${carColor} `;
+//       idDIV.appendChild(divCar);
+//    }
+//
+// }
+//
+// let cars = [{name:'kamaz', color:'red', age:10},{name:'slavuta', color:'grey', age:4}, {name:'mers', color:'black', age:2}, {name:'reno', color:'blue', age:3}];
+//
+// let idishka = 'car';
+// carToDiv(cars,idishka);
+// ================================================
+
+// Для кожного автомобіля створити свій блок, та додати його в елемент, індентифікатор якого ви отримали.
+// Для кожної властивості створити всередені блока автомоблія свій блок:
+
 function carToDiv(cars, idishka){
 
-    idDIV=document.getElementById(`${idishka}`);
-// idDIV=document.getElementById('car');
+   idDIV=document.getElementById(`${idishka}`);
+   divCar= document.createElement('div');
+   for (const key in cars) {
+      carName=cars[key].name;
+      carAge=cars[key].age;
+      carColor=cars[key].color;
+      console.log(car)
 
-    console.log(idDIV);
+      divCar= document.createElement('div');
+      divH3=document.createElement("h3");
+      divH3.innerText=`Наименование:${carName}`;
+       divP=document.createElement("p");
+       divP.innerText=`Возраст:${carAge}`;
+       divColor=document.createElement("b");
+        divColor.innerText= `Цвет:${carColor}`;
+      // divCar.innerHTML=`Наименование:${carName}, Возраст:${carAge}, Цвет:${carColor} `;
+      idDIV.appendChild(divCar);
+      divCar.appendChild(divH3);
+       divCar.appendChild(divP);
+       divCar.appendChild(divColor);
+   idDIV.style.display="flex";
+   divCar.style.margin="10px";
+   divCar.style.borderStyle="dotted solid double dashed";
 
-    divCar= document.createElement('div');
-    nameCar='';
-// for (let i = 0; i < cars.length; i++)
-//    {
-
-//    nameCar=nameCar+cars[i]+', ';
-//    }
-    divCar.innerHTML=cars;
-    idDIV.appendChild(divCar);
-
-    console.log(nameCar);
+   }
 
 }
 
-const cars = ['kamaz', 'slavuta', 'mers', 'reno'];
+let cars = [{name:'kamaz', color:'red', age:10},{name:'slavuta', color:'grey', age:4}, {name:'mers', color:'black', age:2}, {name:'reno', color:'blue', age:3}];
+
 let idishka = 'car';
 carToDiv(cars,idishka);
