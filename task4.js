@@ -242,41 +242,40 @@
 
 
 
-// Створити функцію яка :
-// - Додає в боді блок з текстом "Hello owu"
-// - Додає в боді елемент з текстом . Тип елементу та текст отримати через аргументи
-// - приймає масив автомобілів (можна взяти з попередніх дз ),та  індентифікатор елемнту в який потрібно додати список цих автомобілів.
+
 // Для кожного автомобіля створити свій блок, та додати його в елемент, індентифікатор якого ви отримали. Всі властивості авто в обному блоці
 // - приймає масив автомобілів (можна взяти з попередніх дз ),та  індентифікатор елемнту в який потрібно додати список цих автомобілів.
 // Для кожного автомобіля створити свій блок, та додати його в елемент, індентифікатор якого ви отримали.
 // Для кожної властивості створити всередені блока автомоблія свій блок
 
 // (на основі минулого ДЗ)
+// --------------------------------------------------
+
+// приймає масив автомобілів (можна взяти з попередніх дз ),та  індентифікатор елемнту в який потрібно додати список цих автомобілів.
 
 
 
+function carToDiv(cars, idishka){
 
-// const cars = ['kamaz', 'slavuta', 'mers', 'reno'];
-//
-//
-// function carToDiv(cars,id)
-// {
-//     for (let i = 0; i < cars.length; i++)
-//     {
-//         console.log(cars[i]);
-//         if (cars[i].name){
-//             let divka=document.createElement('div');
-//             divka.innerHTML=` Наименование:  ${cars[i].name}`;
-//             document.body.appendChild(divka);
-//             let ul=document.createElement('ul');
-//             divka.appendChild(ul);
-//
-//             li.innerHTML=` Цвет:  ${cars[i].color}`;
-//         }
-//     }
-//
-// }
-//
-//
-//
-// carToDiv(cars);
+    idDIV=document.getElementById(`${idishka}`);
+// idDIV=document.getElementById('car');
+
+    console.log(idDIV);
+
+    divCar= document.createElement('div');
+    nameCar='';
+// for (let i = 0; i < cars.length; i++)
+//    {
+
+//    nameCar=nameCar+cars[i]+', ';
+//    }
+    divCar.innerHTML=cars;
+    idDIV.appendChild(divCar);
+
+    console.log(nameCar);
+
+}
+
+const cars = ['kamaz', 'slavuta', 'mers', 'reno'];
+let idishka = 'car';
+carToDiv(cars,idishka);
